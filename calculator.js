@@ -9,9 +9,9 @@ let operand = null;
 let compute = false;
 let isDecimal = false;
 
-let num1Display = document.querySelector("#num1"),
-    num2Display = document.querySelector("#num2"),
-    operandDisplay = document.querySelector("#operand");
+// let num1Display = document.querySelector("#num1"),
+//     num2Display = document.querySelector("#num2"),
+//     operandDisplay = document.querySelector("#operand");
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -60,9 +60,9 @@ buttons.forEach(button => {
             clearDisplay();
             clearVals();
         }
-    num1Display.textContent = "num1: " + num1;
-    num2Display.textContent = "num2: " + num2;
-    operandDisplay.textContent = "operand: " + operand;
+    // num1Display.textContent = "num1: " + num1;
+    // num2Display.textContent = "num2: " + num2;
+    // operandDisplay.textContent = "operand: " + operand;
     });
 });
 
@@ -99,4 +99,3 @@ const clearVals = () => {
     operand = null;
     isDecimal = false;
 }
-
